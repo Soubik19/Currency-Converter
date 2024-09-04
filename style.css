@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f2f2f2;
+}
+
+.container{
+    background-color: #ffffff;
+    min-height: 50vh;
+    width: 45vw;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+h1{
+    text-align: center;
+    color: #333333; /* Dark gray text */
+}
+
+form{
+    margin: 2rem 0 1rem 0;
+}
+
+form select, button, input{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 0.75rem;
+    background-color: #f9f9f9; /* Lighter background for input, select, and button */
+    color: #333333; /* Dark gray text */
+}
+
+form input{
+    border: 1px solid lightgray;
+    border-radius: 0.5rem;
+    height: 2.5rem;
+    padding-left: 0.25rem;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+p{
+    font-size: 1.1rem;
+}
+
+.dropdown{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.dropdown i{
+    font-size: 1.5rem;
+    margin-top: 1.6rem;
+    color: #666666;
+}
+
+.select-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid lightgray;
+    padding: 0.1rem;
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.select-container img{
+    max-width: 2rem;
+}
+
+.select-container select{
+    font-size: 1rem;
+    width: auto;
+}
+
+.msg{
+    margin: 2rem 0 2rem 0;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666666;
+}
+
+form button{
+    height: 3rem;
+    background-color: #a02c5d;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #B8336A; /* Darker background on hover */
+}
+
+/* Add this media query at the end of your CSS */
+
+@media screen and (max-width: 540px) {
+    .container {
+        width: 80vw; /* Adjust container width for smaller devices */
+    }
+
+    form input {
+        font-size: 0.9rem; /* Reduce font size for input fields */
+    }
+
+    .select-container img {
+        max-width: 1.5rem; /* Reduce flag image size */
+    }
+
+    .select-container select {
+        font-size: 0.9rem; /* Reduce font size for select elements */
+    }
+}
